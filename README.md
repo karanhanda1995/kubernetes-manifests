@@ -34,6 +34,7 @@ kubectl get pods
 
 kubectl apply -f 03-services/nginx-service.yaml
 kubectl get svc
+```
 
 ## Current Examples
 
@@ -52,6 +53,7 @@ ClusterIP service to expose Nginx internally inside the Kubernetes cluster.
 kubectl apply -f 01-pods/nginx-pod.yaml
 kubectl apply -f 02-deployments/nginx-deployment.yaml
 kubectl apply -f 03-services/nginx-service.yaml
+```
 
 ## ConfigMap and Secret Example
 
@@ -65,3 +67,4 @@ kubectl get secret
 kubectl get pods
 
 kubectl exec -it <pod-name> -- env
+```
