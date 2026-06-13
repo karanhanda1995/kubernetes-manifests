@@ -34,3 +34,34 @@ kubectl get pods
 
 kubectl apply -f 03-services/nginx-service.yaml
 kubectl get svc
+
+## Current Examples
+
+### Pod
+Basic Nginx pod manifest.
+
+### Deployment
+Nginx deployment with 3 replicas.
+
+### Service
+ClusterIP service to expose Nginx internally inside the Kubernetes cluster.
+
+## How to Apply
+
+```bash
+kubectl apply -f 01-pods/nginx-pod.yaml
+kubectl apply -f 02-deployments/nginx-deployment.yaml
+kubectl apply -f 03-services/nginx-service.yaml
+
+## ConfigMap and Secret Example
+
+```bash
+kubectl apply -f 04-configmaps/app-configmap.yaml
+kubectl apply -f 05-secrets/app-secret.yaml
+kubectl apply -f 02-deployments/nginx-deployment-with-env.yaml
+
+kubectl get configmap
+kubectl get secret
+kubectl get pods
+
+kubectl exec -it <pod-name> -- env
