@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+
+metadata:
+  name: nginx-annotation
+
+  annotations:
+    owner: "Karan Handa"
+    description: "Demo pod for Kubernetes learning"
+
+spec:
+  containers:
+    - name: nginx
+      image: nginx
