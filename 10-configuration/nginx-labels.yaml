@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+
+metadata:
+  name: nginx-labeled
+
+  labels:
+    app: nginx
+    environment: dev
+    team: devops
+
+spec:
+  containers:
+    - name: nginx
+      image: nginx:latest
