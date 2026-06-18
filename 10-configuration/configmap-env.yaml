@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+
+metadata:
+  name: application-config
+
+data:
+  APP_NAME: Census
+  APP_ENV: Development
+  LOG_LEVEL: INFO
